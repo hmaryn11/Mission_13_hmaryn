@@ -20,9 +20,17 @@ function MovieList() {
   return (
     <>
       {!isIDAdded && (
-        <button className="btn btn-primary" onClick={addID}>
-          Add ID
-        </button>
+        <div className="text-center">
+          <br></br>
+          <h2>Click the button below to view the movie list</h2>
+          <br></br>
+          <button
+            className="btn btn-primary justify-content-center"
+            onClick={addID}
+          >
+            Show Movie List
+          </button>
+        </div>
       )}
       {isIDAdded && (
         <>
@@ -57,10 +65,6 @@ function MovieList() {
               </tbody>
             </table>
           </div>
-
-          <button className="btn btn-primary" onClick={addID}>
-            Add ID
-          </button>
         </>
       )}
     </>
