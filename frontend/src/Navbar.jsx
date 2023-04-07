@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/movielist">
-        {/* <Link to="/" className='navbar-brand'>JH Movie List</Link> */}J H
+        {/* <Link to="/" className='navbar-brand'>JH Movie List</Link> */} _J H
         Movie List
       </a>
       <button

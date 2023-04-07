@@ -3,6 +3,10 @@ import data from '../MovieData.json';
 
 const AllMovies = data.MovieData;
 
+// const extrPad {
+//     marginleft:3
+// }
+
 function MovieList() {
   const [myJSON, setMyJSON] = useState(AllMovies);
   const [isIDAdded, setIsIDAdded] = useState(false);
@@ -20,7 +24,7 @@ function MovieList() {
   return (
     <>
       {!isIDAdded && (
-        <div className="text-center">
+        <div className="text-center p-3">
           <br></br>
           <h2>Click the button below to view the movie list</h2>
           <br></br>
@@ -34,12 +38,12 @@ function MovieList() {
       )}
       {isIDAdded && (
         <>
-          <div>
-            <h3>Joel Hilton's Movie Collection</h3>
+          <div className="text-center p-2">
+            <h1>Joel Hilton's Movie Collection</h1>
           </div>
-          <div>
-            <table className="table">
-              <thead>
+          <div className="p-5">
+            <table className="table table-bordered">
+              <thead className="card-header">
                 <tr>
                   <th>Title</th>
                   <th>Year</th>
