@@ -5,7 +5,7 @@ function Welcome() {
     <>
       <h2 className="text-center">Welcome to the</h2>
       <h1 className="text-center">Joel Hilton</h1>
-      <h2 className="text-center">Movie List Website</h2>
+      <h2 className="text-center">Movie List Website </h2>
     </>
   );
 }
